@@ -4,15 +4,27 @@
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+OR
 ```
-npm run serve
+yarn
 ```
 
-### Compiles and minifies for production
+## storybook
+```
+npm run storybook
+```
+OR
+```
+yarn storybook
+```
+
+## build / bundle
 ```
 npm run build
+```
+OR
+```
+yarn build
 ```
 
 ### Run your unit tests
@@ -25,5 +37,3 @@ npm run test:unit
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

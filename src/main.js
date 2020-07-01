@@ -1,8 +1,13 @@
 import Vue from "vue";
-import App from "./App.vue";
+import StbmBanner from "./components/Banner/Banner.vue";
+import "./assets/tailwind.css";
 
-Vue.config.productionTip = false;
+const Components = {
+  StbmBanner
+};
 
-new Vue({
-  render: h => h(App)
-}).$mount("#app");
+Object.keys(Components).forEach(name => {
+  Vue.component(name, Components[name]);
+});
+
+export default Components;
