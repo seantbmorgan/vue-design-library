@@ -1,0 +1,20 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import StbmBanner from './Banner';
+
+<Meta title="MDX/Banner" component={Banner} />
+
+# Banner
+
+With `MDX` we can define a story for `Banner` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story name="all banners">
+    <form>
+      <Checkbox id="Unchecked" label="Unchecked" />
+      <Checkbox id="Checked" label="Checked" checked />
+      <Checkbox appearance="secondary" id="second" label="Secondary" checked />
+    </form>
+    <stbm-banner success position='bottom'>warn bottom</stbm-banner>
+  </Story>
+</Preview>

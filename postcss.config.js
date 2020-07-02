@@ -1,4 +1,4 @@
-const purgecss = require("@fullhuman/postcss-purgecss");
+// const purgecss = require("@fullhuman/postcss-purgecss");
 const cssnano = require("cssnano");
 
 module.exports = {
@@ -7,10 +7,10 @@ module.exports = {
     process.env.NODE_ENV === "production" ? require("autoprefixer") : null,
     process.env.NODE_ENV === "production"
       ? cssnano({ preset: "default" })
-      : null,
-    purgecss({
-      content: ["./layouts/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
-      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
-    })
+      : null
+    // purgecss({
+    //   content: ["./layouts/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
+    //   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+    // })
   ]
 };

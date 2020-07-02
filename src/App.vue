@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <stbm-banner>Cool banner</stbm-banner>
-    asdasd
+    <stbm-banner danger>Cool banner</stbm-banner>
   </div>
 </template>
 
